@@ -1,0 +1,8 @@
+<div>
+      <ul>
+        <li ng-repeat="shorum in $ctrl.shorums | filter:$ctrl.query | filter:$ctrl.orderProp">
+          <span>{{shorum.name}}</span>
+          <p>{{shorum.description}}</p>
+        </li>
+      </ul>
+</div>

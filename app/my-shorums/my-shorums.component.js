@@ -4,12 +4,12 @@
 angular.
   module('myShorums').
   component('myShorums', {
-    templateUrl: 'phone-list/phone-list.template.html',
-    controller: function PhoneListController($http) {
+    templateUrl: 'my-shorums/my-shorums.template.html',
+    controller: function MyShorumsController($http) {
       var self = this;
 
-      $http.get('phones/phones.json').then(function(response) {
-        self.phones = response.data;
+      $http.get('shorums/shorums.json').then(function(response) {
+        self.shorums = response.data;
         console.log('scope',self);
       });
     }
